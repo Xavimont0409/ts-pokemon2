@@ -19,7 +19,7 @@ export interface PokemonAtributes {
 	weight: number;
 	created: boolean;
 }
-export type noIdPokemon = Omit<PokemonAtributes, "id">
+export type noIdPokemon = Omit<PokemonAtributes, "id" | "created">
 
 export interface TypeAttributes {
 	id: number;

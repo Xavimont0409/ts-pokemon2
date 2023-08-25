@@ -28,7 +28,6 @@ module.exports = (sequelize: any, DataTypes: any) => {
         type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV4,
         primaryKey: true,
-        allowNull: false,
       },
       name: {
         type: DataTypes.STRING,
@@ -64,7 +63,7 @@ module.exports = (sequelize: any, DataTypes: any) => {
       },
       created: {
         type: DataTypes.BOOLEAN,
-        allowNull: false
+        defaultValue: true
       }
     },
     {
